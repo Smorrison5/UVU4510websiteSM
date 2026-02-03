@@ -4,30 +4,22 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>ACC 4510 Website | Spencer Morrison</title>
-
   <style>
-    :root{
-      --bg:#ffffff; --text:#0f172a; --muted:#475569; --line:#e2e8f0;
-      --card:#f8fafc; --accent:#0f766e;
-    }
+    :root{--bg:#fff;--text:#0f172a;--muted:#475569;--line:#e2e8f0;--card:#f8fafc;--accent:#0f766e}
     *{box-sizing:border-box}
     body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.55}
     .wrap{max-width:980px;margin:0 auto;padding:28px 18px 70px}
     header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:var(--bg);position:sticky;top:12px}
     nav a{margin-left:10px;color:var(--muted);text-decoration:none}
     nav a:hover{text-decoration:underline}
-    .hero{margin-top:16px;padding:22px;border:1px solid var(--line);border-radius:16px;background:var(--card)}
-    .heroTop{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
-    .headshot{
-      width:120px;height:120px;object-fit:cover;border-radius:999px;
-      border:1px solid var(--line);
-    }
+    .card{margin-top:16px;padding:22px;border:1px solid var(--line);border-radius:16px;background:var(--card)}
+    .top{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+    img{width:140px;height:140px;border-radius:999px;object-fit:cover;border:1px solid var(--line);background:#fff}
     h1{margin:8px 0 6px;font-size:clamp(24px,3.5vw,38px);line-height:1.12}
     p{margin:10px 0;color:var(--muted);font-size:16px}
-    .accent{color:var(--accent);font-weight:700}
+    .accent{color:var(--accent);font-weight:800}
   </style>
 </head>
-
 <body>
   <div class="wrap">
     <header>
@@ -39,30 +31,31 @@
       </nav>
     </header>
 
-    <section class="hero">
-      <div class="heroTop">
-        <!-- This pulls the exact photo you uploaded -->
-        <img class="headshot" src="_DSC2386.JPG" alt="Spencer Morrison" />
-
+    <section class="card">
+      <div class="top">
+        <img src="./_DSC2386.JPG" alt="Spencer Morrison" />
         <div>
           <div class="accent">UVU • ACC 4510 Course Website</div>
           <h1>Coursework artifacts, project files, and reflections.</h1>
           <p>This website is for an in-class assignment and is intended primarily for my professor.</p>
         </div>
       </div>
+      <p style="font-size:13px;margin-top:14px;color:#64748b">
+        If the photo still doesn’t load, double-check the filename matches exactly: <code>_DSC2386.JPG</code>
+      </p>
     </section>
 
-    <section id="about" class="hero" style="margin-top:14px">
+    <section id="about" class="card">
       <h2 style="margin:0 0 6px">About me</h2>
-      <p>Hi — I’m Spencer Morrison. I enjoy Excel, working with large datasets, and building clean, practical outputs.</p>
+      <p>Hi — I’m Spencer Morrison. I enjoy Excel, large datasets, and building clean, practical outputs.</p>
     </section>
 
-    <section id="work" class="hero" style="margin-top:14px">
+    <section id="work" class="card">
       <h2 style="margin:0 0 6px">ACC 4510 Work</h2>
-      <p>Placeholders for now — I’ll update this section with assignment titles + file links as I upload them.</p>
+      <p>I’ll update this section with assignment titles + file links as I upload them.</p>
     </section>
 
-    <section id="contact" class="hero" style="margin-top:14px">
+    <section id="contact" class="card">
       <h2 style="margin:0 0 6px">Contact</h2>
       <p>Replace this email with yours:</p>
       <p><a href="mailto:youremail@example.com">youremail@example.com</a></p>
