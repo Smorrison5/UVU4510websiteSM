@@ -8,60 +8,29 @@
 
   <style>
     :root{
-      --bg:#ffffff;
-      --text:#0f172a;
-      --muted:#475569;
-      --line:#e2e8f0;
-      --card:#f8fafc;
-      --accent:#0f766e;      /* UVU-ish teal/green */
-      --link:#1d4ed8;
+      --bg:#ffffff; --text:#0f172a; --muted:#475569; --line:#e2e8f0;
+      --card:#f8fafc; --accent:#0f766e; --link:#1d4ed8;
     }
     *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-      background:var(--bg);
-      color:var(--text);
-      line-height:1.55;
-    }
-    a{color:var(--link); text-decoration:none}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.55}
+    a{color:var(--link);text-decoration:none}
     a:hover{text-decoration:underline}
     .wrap{max-width:980px;margin:0 auto;padding:28px 18px 70px}
-
-    header{
-      display:flex;align-items:center;justify-content:space-between;gap:12px;
-      padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:var(--bg);
-      position:sticky;top:12px;
-    }
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:var(--bg);position:sticky;top:12px}
     nav a{margin-left:10px;color:var(--muted)}
-    nav a:hover{color:var(--text);text-decoration:underline}
-
-    .card{
-      margin-top:16px;padding:22px;border:1px solid var(--line);border-radius:16px;background:var(--card);
-    }
+    nav a:hover{color:var(--text)}
+    .card{margin-top:16px;padding:22px;border:1px solid var(--line);border-radius:16px;background:var(--card)}
     .heroTop{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
-    .headshot{
-      width:140px;height:140px;border-radius:999px;object-fit:cover;
-      border:1px solid var(--line);background:#fff;
-    }
+    .headshot{width:140px;height:140px;border-radius:999px;object-fit:cover;border:1px solid var(--line);background:#fff}
     .kicker{color:var(--accent);font-weight:800;letter-spacing:.2px}
     h1{margin:8px 0 6px;font-size:clamp(24px,3.5vw,38px);line-height:1.12}
     h2{margin:0 0 6px;font-size:20px}
     p{margin:10px 0;color:var(--muted);font-size:16px}
     .btnRow{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
-    .btn{
-      display:inline-flex;align-items:center;gap:8px;
-      padding:10px 12px;border-radius:12px;border:1px solid var(--line);
-      background:var(--bg);color:var(--text);font-weight:700;
-    }
-    .btn.primary{
-      border-color:rgba(15,118,110,.35);
-      background:rgba(15,118,110,.10);
-      color:#064e3b;
-    }
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--text);font-weight:700}
+    .btn.primary{border-color:rgba(15,118,110,.35);background:rgba(15,118,110,.10);color:#064e3b}
     .btn:hover{text-decoration:none;filter:brightness(.98)}
     .small{font-size:13px;color:#64748b}
-    code{background:#fff;border:1px solid var(--line);padding:1px 6px;border-radius:8px}
   </style>
 </head>
 
@@ -79,8 +48,8 @@
 
     <section class="card">
       <div class="heroTop">
-        <!-- Your uploaded image in repo root -->
-        <img class="headshot" src="./_DSC2386.JPG" alt="Spencer Morrison" />
+        <!-- ✅ Updated image reference -->
+        <img class="headshot" src="./family_photo.jpg" alt="Spencer Morrison" />
 
         <div>
           <div class="kicker">UVU • ACC 4510 Course Website</div>
@@ -96,7 +65,7 @@
           </div>
 
           <p class="small" style="margin-top:12px">
-            Image not showing? Make sure you also added the <code>.nojekyll</code> file (instructions below).
+            If the image doesn’t load, double-check the file extension (jpg/jpeg/png) matches your repo.
           </p>
         </div>
       </div>
@@ -108,7 +77,6 @@
         Hi — I’m Spencer Morrison. I enjoy working with Excel, large datasets, and building clean, practical outputs
         that make information easier to understand.
       </p>
-      <p class="small"><strong>Resume highlights (edit later):</strong> Excel tools • data organization • clear documentation</p>
     </section>
 
     <section id="work" class="card">
@@ -126,7 +94,6 @@
 
     <section id="links" class="card">
       <h2>Social links</h2>
-      <p class="small">Optional — add only what you want visible to your professor.</p>
       <ul class="small">
         <li>GitHub: <a href="#" onclick="alert('Replace this with your GitHub profile link'); return false;">Add link</a></li>
         <li>LinkedIn: <a href="#" onclick="alert('Replace this with your LinkedIn link'); return false;">Add link</a></li>
@@ -137,15 +104,6 @@
       <h2>Contact</h2>
       <p>Replace this with your email:</p>
       <p><a href="mailto:youremail@example.com">youremail@example.com</a></p>
-    </section>
-
-    <section class="card">
-      <h2>Required setup for the photo</h2>
-      <p>
-        Because your photo filename starts with <code>_</code> (underscore), GitHub Pages may ignore it unless you disable Jekyll.
-        To do that, add a file named <code>.nojekyll</code> in the repo root.
-      </p>
-      <p class="small"><strong>Next step:</strong> Add file → Create new file → name it <code>.nojekyll</code> → put “x” inside → Commit.</p>
     </section>
   </div>
 </body>
